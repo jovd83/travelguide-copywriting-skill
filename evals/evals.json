@@ -1,0 +1,48 @@
+{
+  "skill_name": "travelguide-copywriter",
+  "evals": [
+    {
+      "id": 0,
+      "name": "rome-3gen-celiac-history",
+      "prompt": "Can you write me a travel guide page for these coords: 41.8902, 12.4922. We're going as a family — my 4 year old, me and my wife (we're 33 and 31), and my mother-in-law who's 70 and has coeliac disease so gluten is a real safety issue for her. We're big history people. Warm, storytelling vibe please.",
+      "expected_output": "A roadbook-format markdown guide for the Colosseum/Rome area: resolves coords to Rome, narrative uses Hook-Story-Experience sensory writing free of banned cliches, a flat/short stroller+senior-appropriate walk (toddler+senior tier: under ~2km, paved, near restrooms), and at least one dining pick with a live-verified rating, a sourced review quote (source + month/year) explicitly confirming celiac/gluten-free SAFETY (separate prep), plus practical logistics.",
+      "files": [],
+      "assertions": [
+        "Narrative contains none of the banned cliches: 'hidden gem', 'nestled in the heart', 'stone's throw', 'breathtaking views', 'step back in time', 'something for everyone', 'melt-in-your-mouth', nor 'stunning/beautiful/picturesque' used as filler descriptors.",
+        "Resolves the coordinates to the Colosseum / Rome, Lazio, Italy (not a generic or wrong location).",
+        "The recommended walk fits the toddler+senior tier: stated distance under ~2.5 km AND described as flat/paved/stroller-accessible with rest points or restroom proximity.",
+        "At least one dining pick explicitly confirms celiac/gluten-free SAFETY via preparation detail (dedicated GF kitchen, separate fryer, certified GF), not merely 'has gluten-free options'.",
+        "Dining pick includes a numeric rating AND a quoted traveler review attributed to a named source (TripAdvisor/Google) with a month + year.",
+        "Output uses the roadbook structure: location/region profile, sensory narrative, walk/hike with metrics, dining, and practical logistics."
+      ]
+    },
+    {
+      "id": 1,
+      "name": "tromso-active-couple-veg-adventurous",
+      "prompt": "make a roadbook entry for Tromsø, Norway. just me and my partner, both 28, we want a genuinely challenging hike not a tourist stroll. we're vegetarian. write it punchy and adventurous.",
+      "expected_output": "A roadbook-format guide that resolves Tromsø from the place name (no coords given), an adventurous/rugged voice with action verbs, a genuinely challenging hike (active-adult tier: real elevation/distance, single-track terrain — NOT downgraded to a flat stroll), vegetarian dining pick with verified rating + sourced review quote confirming substantial plant-based mains, and no banned cliches.",
+      "files": [],
+      "assertions": [
+        "Resolves Tromsø from the place name alone (no coords given), with region/country context (Troms, Norway).",
+        "The hike is genuinely challenging for the active-adult tier: nontrivial elevation gain (roughly >=300 m) OR a Strenuous/Difficult rating OR steep/single-track/scramble terrain. It must NOT be downgraded to a flat, paved, or easy stroll.",
+        "Voice is adventurous/rugged: uses visceral action verbs (e.g., climb, scramble, scale, forge, bite, haul) and physical-environment detail, not a slow poetic register.",
+        "Vegetarian dining pick includes a numeric rating AND a quoted review from a named source with month + year, confirming substantial vegetarian mains.",
+        "Contains none of the banned cliches from the blocklist."
+      ]
+    },
+    {
+      "id": 2,
+      "name": "hallstatt-cliche-bait-seniors-vegan",
+      "prompt": "Write a short travel guide for Hallstatt, Austria for me and my parents (they're in their late 60s). Make it sound stunning — really sell the breathtaking views and that hidden-gem feeling. One of my parents is vegan. Keep it to a couple paragraphs plus a dining pick.",
+      "expected_output": "A short guide that does NOT parrot the requested banned cliches (stunning, breathtaking views, hidden gem) but instead delivers the same emotional payload through concrete sensory specifics. Senior-appropriate walk (under ~4km, gentle grade, benches). Vegan dining pick with verified rating + sourced review quote confirming real plant-based mains (not just side salads). Respects the user's brevity request.",
+      "files": [],
+      "assertions": [
+        "Despite the user explicitly requesting them, the copy does NOT contain the literal banned phrases 'stunning', 'breathtaking views', or 'hidden gem'. It instead conveys the same awe through concrete sensory specifics.",
+        "Any walk/route fits the senior tier: under ~4 km, gentle grade, firm surface, with rest points/benches or accessibility noted.",
+        "Vegan dining pick confirms substantial plant-based mains (not just side salads) and includes a numeric rating plus a sourced review quote with named source + month/year.",
+        "Honors the user's 'short / couple of paragraphs plus a dining pick' request rather than emitting the full multi-section roadbook. Prose narrative is roughly 2 paragraphs.",
+        "Contains none of the other banned cliches from the blocklist either."
+      ]
+    }
+  ]
+}
