@@ -1,13 +1,13 @@
 # Travelguide Copywriter Skill
 
-[![version](https://img.shields.io/badge/version-1.0.0-blue)](CHANGELOG.md)
+[![version](https://img.shields.io/badge/version-2.0.0-blue)](CHANGELOG.md)
 [![status](https://img.shields.io/badge/status-stable-3fb950)](SKILL.md)
 [![category](https://img.shields.io/badge/category-creation-0a7ea4)](SKILL.md)
 [![validation](https://img.shields.io/badge/validation-GitHub%20Actions-2088ff)](.github/workflows/validate.yml)
 [![license](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=flat&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/jovd83)
 
-`travelguide-copywriter` turns a location and a traveler profile into a personalized, sensory-rich travel guide or roadbook — with live-verified dining and age-appropriate walking routes, written to read like real travel writing rather than brochure filler.
+`travelguide-copywriting-skill` turns a location and a traveler profile into a personalized, sensory-rich travel guide or roadbook — with live-verified dining and age-appropriate walking routes, written to read like real travel writing rather than brochure filler.
 
 It resolves coordinates or place names into real geography, mines genuine walking and hiking routes filtered to the physical capacity of the group, sources restaurant recommendations from live web searches (never parametric memory), and drafts copy against a banned-clich&eacute; blocklist and a tone matrix. Output is sized to what the traveler actually asked for: a full multi-section roadbook when the request is open-ended, or a tight couple of paragraphs plus a dining pick when they ask for something short.
 
@@ -52,7 +52,7 @@ For repository-local sharing:
 
 ```powershell
 New-Item -ItemType Directory -Force .agents\skills
-Copy-Item -Recurse . .agents\skills\travelguide-copywriter
+Copy-Item -Recurse . .agents\skills\travelguide-copywriting-skill
 ```
 
 The skill follows the Agent Skills convention of a required `SKILL.md` file with optional supporting folders.

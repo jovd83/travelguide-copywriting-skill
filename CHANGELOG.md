@@ -1,8 +1,15 @@
 # Changelog
 
-All notable changes to `travelguide-copywriter` are documented here.
+All notable changes to `travelguide-copywriting-skill` are documented here.
 
 This project adheres to [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## 2.0.0 - 2026-09-27
+
+### Changed
+
+- **BREAKING:** the skill is named `travelguide-copywriting-skill`, matching its folder and repository (it was `travelguide-copywriter`). The trigger is now `$travelguide-copywriting-skill`. README, `agents/openai.yaml`, evals and the validator follow.
+- `travelguide-composer` refers to it by this name.
 
 ## 1.0.0 - 2026-05-31
 

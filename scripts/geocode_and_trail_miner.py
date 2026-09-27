@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Geocode & Trail Miner Script
-Sourced for the travelguide-copywriter agent skill.
+Sourced for the travelguide-copywriting-skill agent skill.
 Performs dependency-free geocoding and nearby landmark/trail queries using standard libraries.
 """
 

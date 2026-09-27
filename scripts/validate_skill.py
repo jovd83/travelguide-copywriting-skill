@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Repository-local validation for travelguide-copywriter.
+"""Repository-local validation for travelguide-copywriting-skill.
 
 Structural checks for the AgentSkill portfolio standard: required files,
 SKILL.md frontmatter, README badges and sections, a Keep-a-Changelog entry,
@@ -15,7 +15,7 @@ import re
 import sys
 from pathlib import Path
 
-SKILL_NAME = "travelguide-copywriter"
+SKILL_NAME = "travelguide-copywriting-skill"
 
 ROOT_REQUIRED_FILES = [
     "SKILL.md",
@@ -77,7 +77,7 @@ def validate_skill_md(root: Path) -> list[str]:
     # Portfolio standard: traceability metadata.
     for fragment, message in [
         ("author: jovd83", "SKILL.md must declare metadata.author: jovd83"),
-        ('version: "1.0.0"', "SKILL.md must declare metadata.version 1.0.0"),
+        ('version: "2.0.0"', "SKILL.md must declare metadata.version 2.0.0"),
     ]:
         if fragment not in content:
             errors.append(fail(message))
@@ -99,7 +99,7 @@ def validate_release_docs(root: Path) -> list[str]:
     changelog = read_text(root / "CHANGELOG.md")
 
     for fragment, message in [
-        ("version-1.0.0-blue", "README.md must show the 1.0.0 version badge"),
+        ("version-2.0.0-blue", "README.md must show the 2.0.0 version badge"),
         ("status-stable", "README.md must show the status badge"),
         ("category-", "README.md must show the category badge"),
         ("validation-GitHub%20Actions", "README.md must include the validation badge"),

@@ -1,10 +1,10 @@
 ---
-name: travelguide-copywriter
+name: travelguide-copywriting-skill
 description: Use when writing high-quality travel guides, roadbooks, or itineraries. Sourced inputs can include coordinates, links, or place names. It supports personalization based on traveler ages, interests, and dietary needs, and uses live-verified TripAdvisor or Google reviews for restaurant recommendations.
 license: MIT
 metadata:
   author: jovd83
-  version: "1.0.0"
+  version: "2.0.0"
   maturity: "stable"
   category: "creation"
 ---

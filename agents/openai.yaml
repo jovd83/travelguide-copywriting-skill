@@ -1,7 +1,7 @@
 interface:
   display_name: "Travelguide Copywriter"
   short_description: "Write personalized, live-verified travel guides and roadbooks"
-  default_prompt: "Use $travelguide-copywriter to write a personalized travel guide from this location and traveler profile."
+  default_prompt: "Use $travelguide-copywriting-skill to write a personalized travel guide from this location and traveler profile."
 
 policy:
   allow_implicit_invocation: true

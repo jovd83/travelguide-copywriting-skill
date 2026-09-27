@@ -1,5 +1,6 @@
 # Eval workspace (local benchmark runs, not part of the published skill)
 travelguide-copywriter-workspace/
+travelguide-copywriting-skill-workspace/
 
 # Packaged skill artifacts
 *.skill
